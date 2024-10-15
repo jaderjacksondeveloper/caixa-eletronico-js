@@ -1,0 +1,98 @@
+/* Este é o estilo do corpo da página (body). 
+   Imagine que ele define o fundo e a organização principal da tela. */
+   body {
+    /* Escolhemos a fonte Arial para os textos. Se o Arial não estiver disponível, usa uma fonte genérica (sans-serif). */
+    font-family: Arial, sans-serif;
+
+    /* A cor de fundo da página será um cinza clarinho para não ficar tão "branco" e cansar os olhos. */
+    background-color: #f4f4f4;
+
+    /* Aqui estamos usando 'flex', que é uma maneira especial de organizar as coisas na tela.
+       Ele coloca tudo no centro da página, tanto na horizontal quanto na vertical. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Definimos a altura da página para ocupar 100% da tela. Imagine que a altura vai de cima até embaixo. */
+    height: 100vh;
+
+    /* O 'margin: 0;' remove qualquer margem padrão que o navegador coloca na página, deixando tudo bem ajustado. */
+    margin: 0;
+}
+
+/* Agora vamos estilizar o contêiner, que é como uma "caixinha" onde tudo dentro vai ficar organizadinho. */
+.container {
+    /* A cor de fundo da caixinha será branca (#fff), para se destacar no fundo cinza. */
+    background-color: #fff;
+
+    /* Colocamos um "acolchoado" (padding) dentro da caixinha para dar um espaço interno entre as bordas e o conteúdo. */
+    padding: 20px;
+
+    /* As bordas da caixinha serão arredondadas com 10px, dando um visual mais suave e moderno. */
+    border-radius: 10px;
+
+    /* Aqui criamos uma leve sombra ao redor da caixinha, como se ela estivesse flutuando na tela. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* Tudo dentro dessa caixinha será centralizado, inclusive o texto. */
+    text-align: center;
+}
+
+/* Este é o estilo para os títulos <h1>, que geralmente são usados para destacar o nome ou título principal. */
+h1 {
+    /* A cor do título será um cinza escuro, dando um contraste bom com o fundo claro. */
+    color: #333;
+}
+
+/* A classe .menu define o estilo para a área do menu, onde teremos botões. */
+.menu {
+    /* Adicionamos um espaço acima do menu, para não ficar colado no título ou no conteúdo de cima. */
+    margin-top: 20px;
+}
+
+/* Aqui estilizamos os botões, deixando-os bonitos e fáceis de clicar. */
+button {
+    /* Os botões terão fundo verde (#4CAF50), que dá uma sensação de confirmação e positividade. */
+    background-color: #4CAF50;
+
+    /* O texto dos botões será branco, para contrastar bem com o fundo verde. */
+    color: white;
+
+    /* Definimos o tamanho dos botões, tanto na largura quanto na altura, para que fiquem confortáveis de clicar. */
+    padding: 10px 20px;
+
+    /* Adicionamos uma pequena margem entre os botões, para que não fiquem grudados uns nos outros. */
+    margin: 5px;
+
+    /* Retiramos as bordas padrão dos botões, deixando-os mais "limpos". */
+    border: none;
+
+    /* Deixamos as bordas dos botões levemente arredondadas, dando um visual moderno e suave. */
+    border-radius: 5px;
+
+    /* O 'cursor: pointer;' faz o mouse virar uma mãozinha quando passa sobre o botão, indicando que é clicável. */
+    cursor: pointer;
+
+    /* Definimos o tamanho do texto dentro do botão, que será grande o suficiente para fácil leitura. */
+    font-size: 16px;
+}
+
+/* Este bloco define o que acontece quando o mouse passa por cima dos botões (hover).
+   É como se o botão mudasse de cor para dizer "clique aqui!" */
+button:hover {
+    /* Quando o mouse passar por cima, o botão vai ficar um pouquinho mais escuro (#45a049), destacando a ação. */
+    background-color: #45a049;
+}
+
+/* Esse é o estilo para a área onde as mensagens aparecerão. 
+   Imagine que é um painel onde você verá o resultado das suas ações, como o saldo ou os depósitos. */
+#mensagem {
+    /* Adicionamos um espaço acima das mensagens para que elas fiquem afastadas dos botões. */
+    margin-top: 20px;
+
+    /* O tamanho do texto das mensagens será grande (18px) para que fique bem legível. */
+    font-size: 18px;
+
+    /* A cor do texto das mensagens será a mesma cor escura (#333) usada no título, para manter o estilo consistente. */
+    color: #333;
+}

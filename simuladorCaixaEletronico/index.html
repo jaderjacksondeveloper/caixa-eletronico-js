@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- O DOCTYPE diz ao navegador que este é um documento HTML5 moderno. -->
+<html lang="pt-br">
+<head>
+    <!-- O <meta charset="UTF-8"> garante que os caracteres especiais, como acentos, sejam exibidos corretamente. -->
+    <meta charset="UTF-8">
+
+    <!-- O <meta name="viewport"> é super importante para garantir que a página fique bonita em dispositivos móveis,
+         ajustando o layout automaticamente para diferentes tamanhos de tela. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- O <title> é o nome que aparece na aba do navegador. Aqui estamos chamando a nossa página de "Caixa Eletrônico". -->
+    <title>Caixa Eletrônico</title>
+
+    <!-- O <link rel="stylesheet"> conecta nosso arquivo CSS externo (style.css), que define o visual da página,
+         como cores, fontes e tamanhos. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Aqui está o corpo da página. Tudo o que o usuário vai ver e interagir está dentro do <body>. -->
+
+    <!-- Esta <div> com a classe "container" é a caixinha que vai centralizar e organizar o conteúdo da nossa página.
+         Tudo dentro dessa caixinha vai aparecer de forma organizada no meio da tela. -->
+    <div class="container">
+        
+        <!-- O <h1> é o título da página, que será "Caixa Eletrônico". Ele é o maior e mais chamativo texto da tela. -->
+        <h1>Caixa Eletrônico</h1>
+
+        <!-- Esta <div> com o id "mensagem" vai ser onde as mensagens aparecerão, como o saldo ou se o saque foi bem-sucedido.
+             Por enquanto, ela está vazia, mas logo ela vai mostrar o resultado das ações. -->
+        <div id="mensagem"></div>
+
+        <!-- Aqui temos a área do menu, onde vamos colocar os botões para interagir com o caixa eletrônico. -->
+        <div class="menu">
+            <!-- Cada <button> é um botão que o usuário pode clicar para realizar uma ação.
+                 O "onclick" é um comando especial que diz o que o botão vai fazer quando for clicado. -->
+
+            <!-- Este primeiro botão chama a função "consultarSaldo()" quando é clicado, mostrando o saldo na tela. -->
+            <button onclick="consultarSaldo()">Consultar Saldo</button>
+
+            <!-- O segundo botão chama a função "sacarDinheiro()" para retirar dinheiro da conta. -->
+            <button onclick="sacarDinheiro()">Sacar Dinheiro</button>
+
+            <!-- E o terceiro botão chama a função "depositarDinheiro()" para adicionar dinheiro à conta. -->
+            <button onclick="depositarDinheiro()">Depositar Dinheiro</button>
+        </div>
+    </div>
+
+    <!-- Aqui está o script que faz a mágica acontecer! O <script> conecta o arquivo "script.js",
+         que contém o código JavaScript responsável por todas as funções do caixa eletrônico. -->
+    <script src="script.js"></script>
+</body>
+</html>
